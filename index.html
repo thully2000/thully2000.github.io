@@ -1,30 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Thomas Hull - Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Hull | PhD Researcher</title>
     <style>
+      body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background-color: #f4f6f9;
+        margin: 0;
+        color: #333;
+      }
+      .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 40px;
+      }
+      header {
+        text-align: center;
+        padding: 40px 0;
+      }
+      header h1 {
+        margin-bottom: 10px;
+        color: #003366;
+        fint-size: 3rem;
+      }
+      header p {
+        font-size: 1.2rem;
+        color: #666;
+      }
+      .card {
+        background: white;
+        padding: 25px;
+        margin-bottom: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0,08)
+      }
+      .nav-buttons {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
       button {
-        padding: 10px 20px;
+        background-color: #003366;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 8px;
         font-size: 16px;
         cursor: pointer;
+        transition: 0.3s;
+      }
+      button:hover {
+        background-color: #0055aa;
+        transform: translateY(-2px);
+      }
+      .social-links a {
+        display: inline-block;
+        margin-right: 20px;
+        text-decoration: none;
+        color: #0055aa;
+        font-weight: bold;
+      }
+      .social-links a:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
   <body>
-    <h1>About</h1>
-    <p>I am a PhD student at Queen's University Belfast resarching under the title "Behind-the-Meter Generation Forecasting for Grid Visibility".</p>
-    <br>
-    <h1>Links to Other Pages</h1>
-    <button onclick="location.href='research.html'">Research</button>
-    <button onclick="location.href='publications.html'">Publications</button>
-    <button onclick="location.href='teaching.html'">Teaching</button>
-    <button onclick="location.href='projects.html'">Projects</button>
-    <br>
-    <h1>Links to More About Me</h1>
-    <a href="https://www.linkedin.com/in/thomas-hull-90110a17a"> LinkedIn </a>
-    <br>
-    <a href="https://www.researchgate.net/profile/Thomas-Hull-8?ev=hdr_xprf"> ResearchGate </a>
-    <br>
-    <a href="https://pure.qub.ac.uk/en/persons/thomas-hull/">Pure</a>
+    <div class="container">
+      <header>
+        <h1>Thomas Hull</h1>
+        <p>PhD Researcher | Queen's University Belfast</p>
+      </header>
+
+      <div class="card">
+        <h2>About</h2>
+        <p>
+          I am a PhD student at Queen's University Belfast resarching
+          "Behind-the-Meter Generation Forecasting for Grid Visibility". 
+          My work focuses on energy systems, disaggregation methods, 
+          and improving visibility of distributed generation on electricity networks.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Explore My Work</h2>
+
+        <div class="nav-buttons">
+          <button onclick="location.href='research.html'">Research</button>
+          <button onclick="location.href='publications.html'">Publications</button>
+          <button onclick="location.href='teaching.html'">Teaching</button>
+          <button onclick="location.href='projects.html'">Projects</button>
+        </div>
+
+      </div>
+
+      <div class="card">
+        <h2>Academic Profiles</h2>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/thomas-hull-90110a17a" target="_blank"> LinkedIn </a>
+          <a href="https://www.researchgate.net/profile/Thomas-Hull-8?ev=hdr_xprf" target="_blank"> ResearchGate </a>
+          <a href="https://pure.qub.ac.uk/en/persons/thomas-hull/" target="_blank">Pure</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
