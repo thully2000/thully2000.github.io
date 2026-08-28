@@ -1,6 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Hull | Projects</title>
+
     <style>
       body {
         font-family: "Segoe UI", Arial, sans-serif;
@@ -9,21 +13,20 @@
         color: #333;
       }
       .container {
-        max-width: 900px;
+        max-width: 1000px;
         margin: auto;
         padding: 40px;
       }
       header {
         text-align: center;
-        padding: 40px 0;
+        padding: 30px;
       }
       header h1 {
-        margin-bottom: 10px;
         color: #003366;
         font-size: 3rem;
       }
       header p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         color: #666;
       }
       .card {
@@ -33,42 +36,122 @@
         border-radius: 12px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
       }
-      .nav-buttons {
-        display: flex;
-        gap: 15px;
-        flex-wrap: wrap;
-      }
-      button {
-        background-color: #003366;
-        color: white;
-        border: none;
-        padding: 12px 24px;
-        border-radius: 8px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: 0.3s;
-      }
-      button:hover {
-        background-color: #0055aa;
-        transform: translateY(-2px);
-      }
-      .social-links a {
+      .home-link {
         display: inline-block;
-        margin-right: 20px;
+        margin-bottom: 20px;
+        text-decoration: none;
+        color: white;
+        background: #003366;
+        padding: 10px 20px;
+        border-radius: 8px;
+      }
+      .home-link:hover {
+        background: #0055aa;
+      }
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+      .project {
+        background: #eef4fb;
+        border-left: 5px solid #003366;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .project h3 {
+        margin-top: 0;
+        color: #003366;
+      }
+      .tag {
+        display: inline-block;
+        background: #003366;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        margin-right: 5px;
+        margin-top: 10px;
+      }
+      .status {
+        font-weight: bold;
+        color: #008000;
+        margin-top: 10px;
+      }
+      .project a {
         text-decoration: none;
         color: #0055aa;
         font-weight: bold;
       }
-      .social-links a:hover {
+      .project a:hover {
         text-decoration: underline;
       }
     </style>
-    <title>Thomas Hull - Projects</title>
   </head>
+
   <body>
-    <h1>This is where my projects live.</h1>
-    <nav>
-      <a href="index.html">Index</a>
-    </nav>
+    <div class="container">
+      <a href="index.html" class="home-link">Home</a>
+
+      <header>
+        <h1>Projects</h1>
+        <p>Research, software development, and academic projects.</p>
+      </header>
+
+      <div class="card">
+        <h2>Current Research Projects</h2>
+        <div class="projects-grid">
+          <h3>PRISM (Photovoltaic Recognition through Intelligent Similarity Mechanisms)</h3>
+
+          <p>
+            Investigating the improvement made to existing PV disaggregation 
+            algorithms by explicitly incoporating bahvioural similarity metrics.
+          </p>
+
+          <div class="tag">Python</div>
+          <div class="tag">Disaggregation</div>
+          <div class="tag">Photovoltaic</div>
+          <div class="tag">Behavioural Similarity</div>
+          <div class="tag">Low-Voltage Networks</div>
+
+          <p class="status">Status: Ongoing</p>
+        </div>
+
+        <div class="project">
+          <h3>An Impedance Analyser for the Detection of Meteoritic Materials</h3>
+
+          <p>
+            The design and simulation of a low-cost impedance analyser for 
+            the identification of meteoritic materials.
+          </p>
+
+          <div class="tag">Raspberry Pi</div>
+          <div class="tag">Analogue Electronics</div>
+          <div class="tag">MATLAB</div>
+          <div class="tag">Multisim</div>
+          <div class="tag">PCB Manufacture</div>
+
+          <p class="status">Status: Complete</p>
+        </div>
+
+        <div class="project">
+          <h3>Real-Time Detection of Atrial Fibrillation on the Edge</h3>
+
+          <p>
+            The use of machine learning and deep learning models in 
+            detecting atrial fibrillation and communicating results 
+            via edge technologies.
+          </p>
+
+          <div class="tag">Machine Learning</div>
+          <div class="tag">Deep Learning</div>
+          <div class="tag">Python</div>
+          <div class="tag">MQTT</div>
+          <div class="tag">Dashboard</div>
+
+          <p class="status">Status: Complete</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
