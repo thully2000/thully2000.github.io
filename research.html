@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | Thomas Hull</title>
     <style>
       body {
         font-family: "Segoe UI", Arial, sans-serif;
@@ -9,22 +12,17 @@
         color: #333;
       }
       .container {
-        max-width: 900px;
+        max-width: 1000px;
         margin: auto;
         padding: 40px;
       }
       header {
         text-align: center;
-        padding: 40px 0;
+        margin-bottom: 30px;
       }
       header h1 {
-        margin-bottom: 10px;
         color: #003366;
         font-size: 3rem;
-      }
-      header p {
-        font-size: 1.2rem;
-        color: #666;
       }
       .card {
         background: white;
@@ -33,44 +31,111 @@
         border-radius: 12px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0,08);
       }
-      .nav-buttons {
-        display: flex;
-        gap: 15px;
-        flex-wrap: wrap;
+      .research-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px
       }
-      button {
-        background-color: #003366;
-        color: white;
-        border: none;
-        padding: 12px 24px;
-        border-radius: 8px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: 0.3s;
+      .research-item {
+        background: #eef4fb;
+        padding: 20px;
+        border-radius: 10px;
+        border-left: 4px solid #003366;
       }
-      button:hover {
-        background-color: #0055aa;
-        transform: translateY(-2px);
+      .nav-home {
+        margin-bottom: 25px;
       }
-      .social-links a {
-        display: inline-block;
-        margin-right: 20px;
+      .nav-home a {
         text-decoration: none;
-        color: #0055aa;
-        font-weight: bold;
+        color: white;
+        background: #003366;
+        padding: 10px 20px;
+        border-radius: 8px;
       }
-      .social-links a:hover {
-        text-decoration: underline;
+      .nav-home a:hover {
+        background: #0055aa;
+      }
+      .publication {
+        padding: 15px;
+        border-left: 4px solid #0055aa;
+        margin-bottom: 15px;
+        background: #fafafa;
       }
     </style>
-    <title>Thomas Hull Research</title>
   </head>
   <body>
     <div class="container">
-      <h1>This is where my research lives.</h1>
-      <nav>
-        <a href="index.html">Index</a>
-      </nav>
+      <div class="nav-home">
+        <a href="index.html">Home</a>
+      </div>
+      <div class="card">
+        <h2>Research</h2>
+        <p>
+          My PhD research focuses on
+          <strong>Behind-the-Meter Generation Forecasting
+          for Grid Visibility</strong>.
+          The objective is to improve visibility of ditributed 
+          energy resources connected to electricity networks and
+          support more efficient network planning and operation.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Research Themes</h2>
+        <div class="research-grid">
+          <div class="research-item">
+            <h3>Grid Visibility</h3>
+            <p>
+              Improving awareness of generation activity 
+              hidden from network operators.
+            </p>
+          </div>
+          <div class="research-item">
+            <h3> Disaggregation</h3>
+            <p>
+              Developing disaggregation models for low voltage 
+              network monitoring data.
+            </p>
+          </div>
+          <div class="research-item">
+            <h3>Sustainable Energy</h3>
+            <p>
+              Analysing the impact of sustainable resources 
+              on modern electricity systems.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Current Research Activities</h2>
+        <ul>
+          <li>Behind-the-meter solar generation estimation.</li>
+          <li>Disaggregation model development and validation.</li>
+          <li>Behavioural similarity incorporation into disaggregation.</li>
+          <li>Analysis of low-voltage monitoring and irradiance datasets.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Methods & Tools</h2>
+        <p>
+          Python, MATLAB, statistical modelling,
+          energy system analysis, data analytics, 
+          and disaggregation methods.
+        </p>
+      </div>
+      <div class="card">
+        <h2>Selected Publications</h2>
+        <div class="publication">
+          <strong>Seasonal Similarity for Behind-the-Meter PV Disaggregation in LV Networks</strong><br>
+          Conference, 2026
+        </div>
+      </div>
+      <div class="card">
+        <h2>Future Directions</h2>
+        <p>
+          Future work will investigate disaggregation of multiple DERs.
+        </p>
+      </div>
     </div>
   </body>
 </html>
